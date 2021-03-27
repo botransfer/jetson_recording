@@ -10,16 +10,27 @@ If you are using R32, you need to replace /usr/lib/aarch64-linux-gnu/tegra/libnv
 [NVIDIA forum link](https://forums.developer.nvidia.com/t/jetpack-4-2-1-nvjpeg-leaking/79812/8)
 
 - rec_H264.sh
+
   Capture frames from USB webcam and encode in H.264.
+
 - rec_H265.sh
+
   Capture frames from USB webcam and encode in H.265.
+
 - rec_H265_split.sh
+
   Capture frames from USB webcam and encode in H.265, split files after specified duration.
+
   **Note**: most scripts that uses "timeout" are incorrect. "timeout" needs to send SIGINT to gst-launch in order to properly close the output MP4 file.
+  
 - rec_H265_split.py
+
   Python version of the H.265 split-recording script. 
+
 - view.sh
-  Preview script. Works with the standard Jetson SD card image (even without X-window). **Does not work with [Jetcard](https://github.com/NVIDIA-AI-IOT/jetcard)** (HDMI device not recognized)
+
+  Preview script. Works with the standard Jetson SD card image (even without X-window). 
+  **Does not work with [Jetcard](https://github.com/NVIDIA-AI-IOT/jetcard)** (HDMI device not recognized)
 
 ## Raspberry pi scripts
 - raspi_rec.sh
