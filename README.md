@@ -31,19 +31,19 @@ If you are using R32, you need to replace /usr/lib/aarch64-linux-gnu/tegra/libnv
 ### list devices
 	ffmpeg -f avfoundation -list_devices true -i dummy
 
-> ffmpeg version 4.3.1 Copyright (c) 2000-2020 the FFmpeg developers
-> ...
-> [AVFoundation indev @ 0x7ffcd8704900] AVFoundation video devices:
-> [AVFoundation indev @ 0x7ffcd8704900] [0] FaceTime HD Camera (Built-in)
-> [AVFoundation indev @ 0x7ffcd8704900] [1] HD webcam-CMS-V43BK
-> [AVFoundation indev @ 0x7ffcd8704900] [2] Capture screen 0
-> [AVFoundation indev @ 0x7ffcd8704900] AVFoundation audio devices:
-> [AVFoundation indev @ 0x7ffcd8704900] [0] USB Microphone
-> [AVFoundation indev @ 0x7ffcd8704900] [1] Background Music
-> [AVFoundation indev @ 0x7ffcd8704900] [2] MacBook Pro Microphone
-> [AVFoundation indev @ 0x7ffcd8704900] [3] Background Music (UI Sounds)
-> [AVFoundation indev @ 0x7ffcd8704900] [4] ZoomAudioDevice
-> dummy: Input/output error
+	ffmpeg version 4.3.1 Copyright (c) 2000-2020 the FFmpeg developers
+	...
+	[AVFoundation indev @ 0x7ffcd8704900] AVFoundation video devices:
+	[AVFoundation indev @ 0x7ffcd8704900] [0] FaceTime HD Camera (Built-in)
+	[AVFoundation indev @ 0x7ffcd8704900] [1] HD webcam-CMS-V43BK
+	[AVFoundation indev @ 0x7ffcd8704900] [2] Capture screen 0
+	[AVFoundation indev @ 0x7ffcd8704900] AVFoundation audio devices:
+	[AVFoundation indev @ 0x7ffcd8704900] [0] USB Microphone
+	[AVFoundation indev @ 0x7ffcd8704900] [1] Background Music
+	[AVFoundation indev @ 0x7ffcd8704900] [2] MacBook Pro Microphone
+	[AVFoundation indev @ 0x7ffcd8704900] [3] Background Music (UI Sounds)
+	[AVFoundation indev @ 0x7ffcd8704900] [4] ZoomAudioDevice
+	dummy: Input/output error
 
 ### preview
 Specify the device number listed above. For example, the USB webcam "HD webcam-CMS-V43BK" corresponds to device "1"
