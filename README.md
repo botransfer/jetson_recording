@@ -31,6 +31,8 @@ If you are using R32, you need to replace /usr/lib/aarch64-linux-gnu/tegra/libnv
 ### list devices
 	ffmpeg -f avfoundation -list_devices true -i dummy
 
+Output:
+
 	ffmpeg version 4.3.1 Copyright (c) 2000-2020 the FFmpeg developers
 	...
 	[AVFoundation indev @ 0x7ffcd8704900] AVFoundation video devices:
@@ -47,6 +49,7 @@ If you are using R32, you need to replace /usr/lib/aarch64-linux-gnu/tegra/libnv
 
 ### preview
 Specify the device number listed above. For example, the USB webcam "HD webcam-CMS-V43BK" corresponds to device "1"
+
 	ffplay -f avfoundation -video_size 1280x720 -framerate 30 -i 1
 
 ### H.264 capture
