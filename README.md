@@ -48,7 +48,7 @@ Output:
 	dummy: Input/output error
 
 ### preview
-Specify the device number listed above. For example, the USB webcam "HD webcam-CMS-V43BK" corresponds to device "1"
+Specify the device number listed above. For example, in the above output, the USB webcam "HD webcam-CMS-V43BK" corresponds to device "1"
 
 	ffplay -f avfoundation -video_size 1280x720 -framerate 30 -i 1
 
